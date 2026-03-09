@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: discovery-service
+  config:
+    import: optional:configserver:http://localhost:8888
+# It will load the rest of its config (port 8761, eureka details) from the config-repo we created earlier
