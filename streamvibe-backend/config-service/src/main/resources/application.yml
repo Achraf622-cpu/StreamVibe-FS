@@ -1,0 +1,12 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${CONFIG_REPO_URI:file:///${user.dir}/../config-repo}
+# The uri uses an absolute path reference to the local config-repo folder
